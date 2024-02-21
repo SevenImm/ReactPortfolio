@@ -3,7 +3,7 @@ import backGImage from "../assets/images/backGImage.jpg"
 // Import typing animation here
 import { TypeAnimation } from 'react-type-animation'
 // Import icons here
-import {FaXTwitter, FaSquareFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa6'
+import { FaXTwitter, FaSquareFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa6'
 
 const Main = () => {
     return (
@@ -21,7 +21,7 @@ const Main = () => {
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
                                 'Web Developer',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000,
                                 'Coder',
                                 1000,
                                 'Digital Media Synthesizer',
@@ -39,13 +39,13 @@ const Main = () => {
                             repeat={Infinity}
                         />
                     </h2>
-                            <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-                                <FaXTwitter className='cursor-pointer' size={25}/>
-                                <FaSquareFacebook className='cursor-pointer' size={25}/>
-                                <FaInstagram className='cursor-pointer' size={25}/>
-                                <FaLinkedin className='cursor-pointer' size={25}/>
-                                <FaGithub className='cursor-pointer' size={25}/>
-                            </div>
+                    <div className='flex justify-between pt-6 max-w-[200px] w-full'>
+                        {/* <FaXTwitter href='' className='cursor-pointer' size={25}/>
+                                <FaSquareFacebook href='' className='cursor-pointer' size={25}/> */}
+                        <a href='https://www.instagram.com/nglcrdnsvn/' target='_blank'> <FaInstagram className='cursor-pointer' size={25} /> </a>
+                        <a href='https://www.linkedin.com/in/angel-cardenas-152917172/' target='_blank'> <FaLinkedin className='cursor-pointer' size={25} /> </a>
+                        <a href='https://github.com/SevenImm' target='_blank'> <FaGithub className='cursor-pointer' size={25} /> </a>
+                    </div>
                 </div>
 
             </div>
